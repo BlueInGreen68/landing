@@ -1,0 +1,21 @@
+block const
+   - const cssPathStyles = "styles/css/style.css"
+
+block variables
+   - var titlePage = 'Repair Design Project'
+
+block template
+   doctype html
+   html(lang="en" class="page")
+      head
+         meta(charset="UTF-8")
+         title= titlePage
+         link(rel="stylesheet" href= cssPathStyles)
+
+      body.page__body
+
+         include ../../includes/header.pug
+
+         block main
+
+         include ../../includes/footer.pug
