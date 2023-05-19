@@ -1,0 +1,35 @@
+/* yeseva-one-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Yeseva";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/yeseva/yeseva-one-v20-cyrillic_latin-regular.woff2") format("woff2"), url("../../fonts/yeseva/yeseva-one-v20-cyrillic_latin-regular.woff") format("woff");
+}
+/* nunito-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/nunito/nunito-sans-v15-cyrillic_latin-regular.woff2") format("woff2"), url("../../fonts/nunito/nunito-sans-v15-cyrillic_latin-regular.woff") format("woff");
+}
+/* nunito-sans-italic - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../fonts/nunito/nunito-sans-v15-cyrillic_latin-italic.woff2") format("woff2"), url("../../fonts/nunito/nunito-sans-v15-cyrillic_latin-italic.woff") format("woff");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=style.css.map */

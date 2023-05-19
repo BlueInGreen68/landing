@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "renderpug": "pug -w ./page -o ./",
+    "rendersass": "sass -w ./styles/style.scss ./style.css"
+  }
+}
