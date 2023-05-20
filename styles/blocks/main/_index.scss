@@ -1,0 +1,11 @@
+@use '../../global/variables' as *;
+
+.main {
+
+    @media (min-width: 375px) {
+        &__section {
+            background: url("../images/photo/1/1-mobile.png") top left / 100% no-repeat;
+            padding: 85px 18px 61px;
+        }
+    }
+}

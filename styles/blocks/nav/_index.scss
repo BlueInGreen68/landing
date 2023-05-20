@@ -1,0 +1,34 @@
+@use '../../global/variables' as *;
+
+.nav {
+    font-family: "Nunito";
+    font-size: 11px;
+
+    @media (min-width: 375px) {
+        display: none;
+    }
+
+    @media (min-width: 947px) {
+        display: initial;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: 947px) {
+            display: flex;
+            gap: 48px;
+        }    
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__link {
+        &_active {
+            color: $color-middle-yellow;
+        }
+    }
+}

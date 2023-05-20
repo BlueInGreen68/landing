@@ -4,7 +4,7 @@
     "sass": "^1.62.1"
   },
   "scripts": {
-    "renderpug": "pug -w ./page -o ./",
+    "renderpug": "pug -w ./page -o ./ -P",
     "rendersass": "sass -w ./styles/style.scss ./style.css"
   }
 }

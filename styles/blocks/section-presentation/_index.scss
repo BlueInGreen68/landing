@@ -1,0 +1,43 @@
+@use '../../global/variables' as *;
+
+.section-presentation {
+    line-height: 1.3;
+
+    @media (min-width: 375px) {
+        &__header {
+            margin: 0 0 16px 0;
+            font-family: "Yeseva";
+            font-weight: normal;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1.5rem;
+        }
+    
+        &__name-city {
+            color: $color-middle-yellow;
+        }
+
+        &__paragraph {
+            font-size: .875rem;
+            font-family: "Nunito";
+            color: white;
+            margin: 0 0 32px 0;
+        }
+
+        &__buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+            gap: 26px;
+        }
+
+        &__button {
+            padding: 19px 70px;
+            text-transform: uppercase;
+
+            &_theme_application {
+                background-color: transparent;
+                border: 1px solid white;
+            }
+        }
+    }
+}

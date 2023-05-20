@@ -1,2 +1,10 @@
 @use '../../global/variables' as *;
 
+.button {
+    background-color: $color-middle-yellow;
+    color: white;
+    font-family: "Nunito";
+    font-style: italic;
+    border: none;
+    border-radius: 2px;
+}

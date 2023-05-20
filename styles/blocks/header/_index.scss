@@ -1,0 +1,67 @@
+@use '../../global/variables' as *;
+
+.header {
+    font-family: "Nunito";
+    font-size: 11px;
+    line-height: 15px;
+    background-color: black;
+
+    @media (min-width: 375px) {
+        padding: 23px 18px 24px;
+    }
+
+    @media (min-width: 1256px) {
+        padding: 24px 90px 22px 92px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+
+        @media (min-width: 375px) {
+            gap: 56px;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 1256px) {
+            gap: 0;
+            max-width: 1300px;
+        }
+    }
+
+    &__logo {
+        color: $color-middle-yellow;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 45px;
+        align-items: center;
+    }
+
+    &__tel {
+        color: white;
+        text-decoration: none;
+
+        @media (min-width: 768px) {
+            color: $color-middle-yellow;
+            text-decoration: underline;
+        }
+    }
+
+    &__button {
+        padding: 13px 33px;
+        cursor: pointer;
+        
+        @media (min-width: 375px) {
+            display: none;
+        }
+
+        @media (min-width: 1256px) {
+            display: initial;
+        }
+    }
+}
