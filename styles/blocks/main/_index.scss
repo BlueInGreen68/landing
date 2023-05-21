@@ -2,10 +2,17 @@
 
 .main {
 
-    @media (min-width: 375px) {
-        &__section {
+    &__section {
+        @media (min-width: 375px) {
             background: url("../images/photo/1/1-mobile.png") top left / 100% no-repeat;
             padding: 85px 18px 61px;
         }
+
+        @media (min-width: 949px) {
+            background: url("../images/photo/1/1-home.png") top left / 100% no-repeat;
+            padding: 194px 627px 208px 134px;
+        }
+
+        // Поправь padding у section-presentation
     }
 }
