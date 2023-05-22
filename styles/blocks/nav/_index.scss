@@ -8,7 +8,7 @@
         display: none;
     }
 
-    @media (min-width: 947px) {
+    @media (min-width: 1256px) {
         display: initial;
     }
 
@@ -16,7 +16,7 @@
         padding: 0;
         margin: 0;
 
-        @media (min-width: 947px) {
+        @media (min-width: 1256px) {
             display: flex;
             gap: 48px;
         }    

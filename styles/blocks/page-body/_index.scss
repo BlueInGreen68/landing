@@ -2,4 +2,12 @@
 
 .page__body {
     margin: 0;
+    max-width: 375px;
+    background-color: #181818;
+    margin: 0 auto;
+
+    @media (min-width: 1256px) {
+        max-width: none;
+        margin: none;
+    }
 }

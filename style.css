@@ -41,6 +41,16 @@
   border-radius: 2px;
 }
 
+.title {
+  font-family: "Yeseva";
+  font-size: 1.375rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  color: #E3B873;
+  text-align: center;
+}
+
 .link {
   color: white;
   text-decoration: none;
@@ -48,6 +58,15 @@
 
 .page__body {
   margin: 0;
+  max-width: 375px;
+  background-color: black;
+  margin: 0 auto;
+}
+@media (min-width: 1256px) {
+  .page__body {
+    max-width: none;
+    margin: none;
+  }
 }
 
 .header {
@@ -127,7 +146,7 @@
     display: none;
   }
 }
-@media (min-width: 947px) {
+@media (min-width: 1256px) {
   .nav {
     display: initial;
   }
@@ -136,7 +155,7 @@
   padding: 0;
   margin: 0;
 }
-@media (min-width: 947px) {
+@media (min-width: 1256px) {
   .nav__list {
     display: flex;
     gap: 48px;
@@ -155,10 +174,16 @@
     padding: 85px 18px 61px;
   }
 }
+<<<<<<< Updated upstream
 @media (min-width: 949px) {
   .main__section {
     background: url("../images/photo/1/1-home.png") top left/100% no-repeat;
     padding: 194px 627px 208px 134px;
+=======
+@media (min-width: 1256px) {
+  .main__section {
+    background: url("../images/photo/1/1-large.png") top left/100% no-repeat;
+>>>>>>> Stashed changes
   }
 }
 
@@ -190,7 +215,7 @@
     font-size: 0.875rem;
     font-family: "Nunito";
     color: white;
-    margin: 0 0 32px 0;
+    margin: 0 0 54px 0;
   }
 }
 @media (min-width: 375px) {
@@ -222,6 +247,22 @@
   background-color: transparent;
   border: 1px solid white;
   padding: 20px 22px;
+}
+
+.compl-projects {
+  padding: 36px 17px;
+  text-align: center;
+}
+@media (min-width: 375px) {
+  .compl-projects__list {
+    display: none;
+  }
+}
+.compl-projects__title {
+  margin-bottom: 35px;
+}
+.compl-projects__paragraph {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

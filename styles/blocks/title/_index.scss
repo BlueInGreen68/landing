@@ -1,0 +1,11 @@
+@use '../../global/variables' as *;
+
+.title {
+    font-family: "Yeseva";
+    font-size: 1.375rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    color: $color-middle-yellow;
+    text-align: center;
+}

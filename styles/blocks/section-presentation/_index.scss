@@ -25,12 +25,19 @@
         }
 
         &__paragraph {
+<<<<<<< Updated upstream
             @media (min-width: 375px) {
                 font-size: .875rem;
                 font-family: "Nunito";
                 color: white;
                 margin: 0 0 32px 0;
             }
+=======
+            font-size: .875rem;
+            font-family: "Nunito";
+            color: white;
+            margin: 0 0 54px 0;
+>>>>>>> Stashed changes
         }
 
         &__buttons {
