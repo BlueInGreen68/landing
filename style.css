@@ -293,4 +293,36 @@
   margin: 18px 0 0 0;
 }
 
+.online-control {
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.online-control__title {
+  margin-bottom: 20px;
+}
+.online-control__title_theme_white {
+  color: white;
+}
+.online-control__image {
+  margin-bottom: 40px;
+}
+.online-control__video {
+  margin: 0 auto;
+  position: relative;
+}
+.online-control__button {
+  position: absolute;
+  background-color: #E3B873;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 11px 8px 13px;
+}
+.online-control__button_theme_play {
+  position: absolute;
+  top: 42%;
+  left: 45%;
+}
+
 /*# sourceMappingURL=style.css.map */
