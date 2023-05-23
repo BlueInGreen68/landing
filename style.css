@@ -32,6 +32,11 @@
   scroll-behavior: smooth;
 }
 
+.text {
+  font-family: "Nunito";
+  color: white;
+}
+
 .button {
   background-color: #E3B873;
   color: white;
@@ -59,7 +64,7 @@
 .page__body {
   margin: 0;
   max-width: 375px;
-  background-color: black;
+  background-color: #181818;
   margin: 0 auto;
 }
 @media (min-width: 1256px) {
@@ -174,26 +179,9 @@
     padding: 85px 18px 61px;
   }
 }
-<<<<<<< Updated upstream
-@media (min-width: 949px) {
-  .main__section {
-    background: url("../images/photo/1/1-home.png") top left/100% no-repeat;
-    padding: 194px 627px 208px 134px;
-=======
-@media (min-width: 1256px) {
-  .main__section {
-    background: url("../images/photo/1/1-large.png") top left/100% no-repeat;
->>>>>>> Stashed changes
-  }
-}
 
 .section-presentation {
   line-height: 1.3;
-}
-@media (min-width: 768px) {
-  .section-presentation {
-    padding-right: 300px;
-  }
 }
 @media (min-width: 375px) {
   .section-presentation__header {
@@ -210,13 +198,11 @@
     color: #E3B873;
   }
 }
-@media (min-width: 375px) {
-  .section-presentation__paragraph {
-    font-size: 0.875rem;
-    font-family: "Nunito";
-    color: white;
-    margin: 0 0 54px 0;
-  }
+.section-presentation__paragraph {
+  font-size: 0.875rem;
+  font-family: "Nunito";
+  color: white;
+  margin: 0 0 54px 0;
 }
 @media (min-width: 375px) {
   .section-presentation__buttons {
@@ -225,21 +211,10 @@
     gap: 26px;
   }
 }
-@media (min-width: 768px) {
-  .section-presentation__buttons {
-    grid-template-columns: repeat(auto-fit, 207px);
-  }
-}
 @media (min-width: 375px) {
   .section-presentation__button {
     font-size: 11px;
     padding: 19px 70px;
-    text-transform: uppercase;
-  }
-}
-@media (min-width: 768px) {
-  .section-presentation__button {
-    padding: 20px 42px;
     text-transform: uppercase;
   }
 }
@@ -250,6 +225,7 @@
 }
 
 .compl-projects {
+  margin: 0 0 58px 0;
   padding: 36px 17px;
   text-align: center;
 }
@@ -258,11 +234,63 @@
     display: none;
   }
 }
+.compl-projects__info {
+  display: flex;
+  flex-direction: column;
+}
 .compl-projects__title {
-  margin-bottom: 35px;
+  margin: 0 auto 35px;
+  width: 235px;
 }
 .compl-projects__paragraph {
-  color: white;
+  margin: 0 0 75px 0;
+}
+.compl-projects__description {
+  order: 2;
+}
+.compl-projects__slider {
+  margin: 0;
+  position: relative;
+  order: 1;
+  margin-bottom: 36px;
+}
+.compl-projects__button {
+  position: absolute;
+  background-color: #E3B873;
+  border: 0;
+  border-radius: 30px;
+}
+.compl-projects__button_theme_previous {
+  top: 40%;
+  left: 14px;
+  padding: 10px 15px 8px 13px;
+}
+.compl-projects__button_theme_next {
+  top: 40%;
+  right: 14px;
+  padding: 10px 13px 8px 15px;
+}
+.compl-projects__description {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.description__item {
+  font-family: "Yeseva";
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #E3B873;
+  list-style: none;
+  margin: 0 0 36px 0;
+}
+.description__item:nth-last-of-type(-n+2) {
+  margin: 0;
+}
+.description__paragraph {
+  margin: 18px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

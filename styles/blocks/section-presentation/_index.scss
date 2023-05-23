@@ -3,10 +3,6 @@
 .section-presentation {
     line-height: 1.3;
 
-    @media (min-width: 768px) {
-        padding-right: 300px;
-    }
-
         &__header {
             @media (min-width: 375px) {
                 margin: 0 0 16px 0;
@@ -25,19 +21,10 @@
         }
 
         &__paragraph {
-<<<<<<< Updated upstream
-            @media (min-width: 375px) {
-                font-size: .875rem;
-                font-family: "Nunito";
-                color: white;
-                margin: 0 0 32px 0;
-            }
-=======
             font-size: .875rem;
             font-family: "Nunito";
             color: white;
             margin: 0 0 54px 0;
->>>>>>> Stashed changes
         }
 
         &__buttons {
@@ -46,21 +33,12 @@
                 grid-template-columns: repeat(auto-fit, max(339px));
                 gap: 26px;
             }
-
-            @media (min-width: 768px) {
-                grid-template-columns: repeat(auto-fit, max(207px));
-            }
         }
 
         &__button {
             @media (min-width: 375px) {
                 font-size: 11px;
                 padding: 19px 70px;
-                text-transform: uppercase;
-            }
-
-            @media (min-width: 768px) {
-                padding: 20px 42px;
                 text-transform: uppercase;
             }
 

@@ -2,6 +2,7 @@
 @forward 'global/global';
 
 // Blocks
+@use "blocks/text";
 @use "blocks/button";
 @use "blocks/title";
 @use "blocks/link";
@@ -11,3 +12,4 @@
 @use "blocks/main";
 @use "blocks/section-presentation";
 @use "blocks/compl-projects";
+@use "blocks/description";

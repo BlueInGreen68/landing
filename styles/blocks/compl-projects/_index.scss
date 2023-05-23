@@ -1,6 +1,7 @@
 @use '../../global/variables' as *;
 
 .compl-projects {
+    margin: 0 0 58px 0;
     padding: 36px 17px;
     text-align: center;
 
@@ -10,11 +11,55 @@
         }
     }
 
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__title {
-        margin-bottom: 35px;
+        margin: 0 auto 35px;
+        width: 235px;
     }
 
     &__paragraph {
-        color: white;
+        margin: 0 0 75px 0;
+    }
+
+    &__description {
+        order: 2;
+    }
+
+    &__slider {
+        margin: 0;
+        position: relative;
+        order: 1;
+        margin-bottom: 36px;
+    }
+
+    &__button {
+        position: absolute;
+        background-color: $color-middle-yellow;
+        border: 0;
+        border-radius: 30px;
+
+        &_theme_previous {
+            top: 40%;
+            left: 14px;
+            padding: 10px 15px 8px 13px;
+        }
+
+        &_theme_next {
+            top: 40%;
+            right: 14px;
+            padding: 10px 13px 8px 15px;
+        }
+    }
+
+    &__description {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
     }
 }
