@@ -1,0 +1,87 @@
+@use '../../global/variables' as *;
+
+.form {
+    font-family: "Nunito";
+    width: 100%;
+
+    &__wrapper {
+        text-align: left;
+        margin-bottom: 63px;
+
+        &_margin-bottom_27px {
+            margin-bottom: 27px;
+        }
+
+        &_margin-bottom_63px {
+            margin-bottom: 63px;
+        }
+
+        &_margin_none {
+            margin: 0;
+        }
+
+        &_flex_column {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        &_order_0 {
+            order: 0;
+        }
+    }
+
+    &__label {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 13px;
+
+        &_inline-flex {
+            display: inline-flex;
+            align-items: flex-end;
+        }
+    }
+    
+    &__checkbox {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-color: $color-middle-yellow;
+        border-radius: 1px;
+        box-shadow: 0 0 0 0.1em $color-middle-yellow;
+
+        &_theme_custom-check {
+            appearance: none;
+            position: absolute;
+        }
+        
+        &:checked {
+            background-image: url("../images/svg/checked.svg");
+            background-position: 50%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__span {
+        padding-left: 2rem;
+        color: white;
+        font-size: .875rem;
+    }
+
+    &__button {
+        font-family: "Nunito";
+        font-size: 13px;
+        font-style: normal;
+        padding: 20px 124px;
+        text-transform: uppercase;
+
+        &_order_1 {
+            order: 1;
+        }
+
+        &_position_relative {
+            top: 83px;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}

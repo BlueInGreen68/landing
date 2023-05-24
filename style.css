@@ -294,10 +294,11 @@
 }
 
 .online-control {
-  padding: 0 18px;
+  padding: 0 18px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .online-control__title {
   margin-bottom: 20px;
@@ -309,7 +310,7 @@
   margin-bottom: 40px;
 }
 .online-control__video {
-  margin: 0 auto;
+  margin: 0 auto 28px;
   position: relative;
 }
 .online-control__button {
@@ -323,6 +324,108 @@
   position: absolute;
   top: 42%;
   left: 45%;
+}
+.online-control__hr {
+  margin-bottom: 22px;
+}
+.online-control__paragraph {
+  margin: 0 0 63px 0;
+}
+
+.form {
+  font-family: "Nunito";
+  width: 100%;
+}
+.form__wrapper {
+  text-align: left;
+  margin-bottom: 63px;
+}
+.form__wrapper_margin-bottom_27px {
+  margin-bottom: 27px;
+}
+.form__wrapper_margin-bottom_63px {
+  margin-bottom: 63px;
+}
+.form__wrapper_margin_none {
+  margin: 0;
+}
+.form__wrapper_flex_column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form__wrapper_order_0 {
+  order: 0;
+}
+.form__label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+.form__label_inline-flex {
+  display: inline-flex;
+  align-items: flex-end;
+}
+.form__checkbox {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #E3B873;
+  border-radius: 1px;
+  box-shadow: 0 0 0 0.1em #E3B873;
+}
+.form__checkbox_theme_custom-check {
+  appearance: none;
+  position: absolute;
+}
+.form__checkbox:checked {
+  background-image: url("../images/svg/checked.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.form__span {
+  padding-left: 2rem;
+  color: white;
+  font-size: 0.875rem;
+}
+.form__button {
+  font-family: "Nunito";
+  font-size: 13px;
+  font-style: normal;
+  padding: 20px 124px;
+  text-transform: uppercase;
+}
+.form__button_order_1 {
+  order: 1;
+}
+.form__button_position_relative {
+  top: 83px;
+  position: absolute;
+  width: 100%;
+}
+
+.input {
+  background-color: #181818;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  color: white;
+  width: 100%;
+}
+.input::placeholder {
+  color: white;
+  font-size: 0.875rem;
+}
+
+.types-of-repair {
+  background-color: white;
+  padding: 83px 18px 0;
+  display: flex;
+  flex-direction: column;
+}
+.types-of-repair__title {
+  margin-bottom: 17px;
+}
+.types-of-repair__title_theme_black {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

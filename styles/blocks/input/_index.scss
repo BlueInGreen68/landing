@@ -1,0 +1,14 @@
+@use '../../global/variables' as *;
+
+.input {
+    background-color: #181818;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    width: 100%;
+
+    &::placeholder {
+        color: white;
+        font-size: .875rem;
+    }
+}
