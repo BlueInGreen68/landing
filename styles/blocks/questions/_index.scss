@@ -1,0 +1,25 @@
+@use '../../global/variables' as *;
+
+.questions {
+    padding: 173px 18px 49px;
+
+    &__title {
+        margin-bottom: 52px;
+
+        &_theme_white {
+            color: white;
+        }
+
+        &_margin-bottom_24px {
+            margin-bottom: 24px;
+        }    
+    }
+
+    &__image {
+        max-width: 100%;
+
+        &_margin-bottom_42px {
+            margin-bottom: 42px;
+        }
+    }
+}

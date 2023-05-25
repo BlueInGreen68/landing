@@ -2,9 +2,10 @@
 
 .types-of-repair {
     background-color: white;
-    padding: 83px 18px 0;
+    padding: 83px 18px 160px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__title {
         margin-bottom: 17px;
@@ -12,5 +13,23 @@
         &_theme_black {
             color: black;
         }
+
+        &_margin_none {
+            margin: 0;
+        }
+    }
+
+    &__card {
+        margin-bottom: 178px;
+    }
+
+    &__fantasies {
+        position: relative;
+    }
+    
+    &__slider {
+        margin: 0;
+        top: 189%;
+        position: absolute;
     }
 }

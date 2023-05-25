@@ -1,0 +1,45 @@
+@use '../../global/variables' as *;
+
+.card {
+    position: relative;
+
+    &__wrapper {
+        padding: 21px 41px 0 31px;
+        background-color: white;
+        position: absolute;
+        top: 58%;
+        left: 0;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__title {
+        font-family: "Yeseva";
+        font-weight: normal;
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+
+    &__item {
+        font-family: "Nunito";
+        line-height: 1.6;
+        font-size: 13px;
+        color: $color-shark-fin;
+        list-style-position: inside;
+    }
+
+    &__price {
+        background-color: $color-middle-yellow;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        position: relative;
+        left: -31px;
+        bottom: -21px;
+        text-align: center;
+    }
+}

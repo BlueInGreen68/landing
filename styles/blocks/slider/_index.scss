@@ -1,0 +1,22 @@
+@use '../../global/variables' as *;
+
+.slider {
+    &__button {
+        position: absolute;
+        background-color: $color-middle-yellow;
+        border: 0;
+        border-radius: 30px;
+    
+        &_theme_previous {
+            top: 40%;
+            left: 14px;
+            padding: 10px 15px 8px 13px;
+        }
+    
+        &_theme_next {
+            top: 40%;
+            right: 14px;
+            padding: 10px 13px 8px 15px;
+        }
+    }
+}
