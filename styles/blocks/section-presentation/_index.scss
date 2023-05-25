@@ -48,4 +48,11 @@
                 padding: 20px 22px;
             }
         }
+
+        &__wrapper {
+            @media (min-width: 1256px) {
+                width: 676px;
+                margin: 0 auto 0 325px;
+            }
+        }
 }

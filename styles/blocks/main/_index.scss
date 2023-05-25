@@ -6,5 +6,9 @@
             background: url("../images/photo/1/1-mobile.png") top left / 100% no-repeat;
             padding: 85px 18px 61px;
         }
+
+        @media (min-width: 1256px) {
+            padding: 194px 0 208px;
+        }
     }
 }
