@@ -6,12 +6,13 @@
 @use "blocks/button";
 @use "blocks/title";
 @use "blocks/link";
-@use "blocks/page-body";
+@use "blocks/page";
 @use "blocks/header";
 @use "blocks/nav";
 @use "blocks/main";
 @use "blocks/section-presentation";
 @use "blocks/compl-projects";
+@use "blocks/switch-menu";
 @use "blocks/slider";
 @use "blocks/description";
 @use "blocks/online-control";
@@ -21,3 +22,4 @@
 @use "blocks/card";
 @use "blocks/questions";
 @use "blocks/social-links";
+@use "blocks/wrapper";

@@ -64,7 +64,7 @@
 .page__body {
   margin: 0;
   max-width: 375px;
-  background-color: #181818;
+  background-color: #131313;
   margin: 0 auto;
 }
 @media (min-width: 1256px) {
@@ -73,12 +73,16 @@
     margin: none;
   }
 }
+@media (min-width: 1256px) {
+  .page__wrapper {
+    max-width: 1256px;
+  }
+}
 
 .header {
   font-family: "Nunito";
   font-size: 11px;
   line-height: 15px;
-  background-color: black;
 }
 @media (min-width: 375px) {
   .header {
@@ -93,7 +97,6 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 @media (min-width: 375px) {
   .header__wrapper {
@@ -104,7 +107,6 @@
 @media (min-width: 1256px) {
   .header__wrapper {
     gap: 0;
-    max-width: 1300px;
   }
 }
 .header__logo {
@@ -181,7 +183,8 @@
 }
 @media (min-width: 1256px) {
   .main__section {
-    padding: 194px 0 208px;
+    background: none;
+    padding: 0;
   }
 }
 
@@ -198,6 +201,12 @@
     font-size: 1.5rem;
   }
 }
+@media (min-width: 1256px) {
+  .section-presentation__header {
+    margin: 0 0 19px 0;
+    font-size: 2.5rem;
+  }
+}
 @media (min-width: 375px) {
   .section-presentation__name-city {
     color: #E3B873;
@@ -209,6 +218,12 @@
   color: white;
   margin: 0 0 54px 0;
 }
+@media (min-width: 1256px) {
+  .section-presentation__paragraph {
+    font-size: 1.375rem;
+    margin: 0 0 44px 0;
+  }
+}
 @media (min-width: 375px) {
   .section-presentation__buttons {
     display: grid;
@@ -216,11 +231,24 @@
     gap: 26px;
   }
 }
+@media (min-width: 1256px) {
+  .section-presentation__buttons {
+    grid-template-columns: repeat(auto-fit, 207px);
+  }
+}
+.section-presentation__button {
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 @media (min-width: 375px) {
   .section-presentation__button {
-    font-size: 11px;
     padding: 19px 70px;
-    text-transform: uppercase;
+  }
+}
+@media (min-width: 375px) {
+  .section-presentation__button {
+    padding: 19px 42px;
   }
 }
 .section-presentation__button_theme_application {
@@ -228,42 +256,129 @@
   border: 1px solid white;
   padding: 20px 22px;
 }
+.section-presentation__button_box-shadow_yellow {
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
 @media (min-width: 1256px) {
   .section-presentation__wrapper {
-    width: 676px;
-    margin: 0 auto 0 325px;
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1256px) {
+  .section-presentation__info {
+    position: absolute;
+    padding: 194px 0 208px;
+    max-width: 600px;
+  }
+}
+.section-presentation__img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 375px) {
+  .section-presentation__img {
+    display: none;
+  }
+}
+@media (min-width: 1256px) {
+  .section-presentation__img {
+    display: initial;
   }
 }
 
 .compl-projects {
   margin: 0 0 58px 0;
-  padding: 36px 17px;
+  padding: 36px 17px 0;
   text-align: center;
+}
+@media (min-width: 1256px) {
+  .compl-projects {
+    padding: 107px 42px 0;
+    margin-bottom: 90px;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    row-gap: 45px;
+    column-gap: 50px;
+  }
+}
+.compl-projects__list {
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 375px) {
   .compl-projects__list {
     display: none;
   }
 }
+@media (min-width: 1256px) {
+  .compl-projects__list {
+    display: initial;
+    grid-column: 2/3;
+    display: flex;
+    gap: 60px;
+  }
+}
 .compl-projects__info {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1256px) {
+  .compl-projects__info {
+    text-align: left;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__item {
+    list-style: none;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__link {
+    font-family: "Yeseva";
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+.compl-projects__link_active {
+  color: #E3B873;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
 .compl-projects__title {
-  margin: 0 auto 35px;
   width: 235px;
 }
-.compl-projects__paragraph {
-  margin: 0 0 75px 0;
+@media (min-width: 375px) {
+  .compl-projects__title {
+    margin: 0 auto 35px;
+  }
 }
-.compl-projects__description {
-  order: 2;
+@media (min-width: 1256px) {
+  .compl-projects__title {
+    margin: 0 0 35px;
+    text-align: left;
+    font-size: 1.75rem;
+  }
 }
-.compl-projects__slider {
-  margin: 0;
-  position: relative;
-  order: 1;
-  margin-bottom: 36px;
+@media (min-width: 375px) {
+  .compl-projects__paragraph {
+    margin: 0 0 75px 0;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__paragraph {
+    text-align: left;
+    font-size: 0.875rem;
+    width: 442px;
+  }
 }
 .compl-projects__description {
   padding: 0;
@@ -271,6 +386,75 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: left;
+}
+@media (min-width: 375px) {
+  .compl-projects__description {
+    order: 2;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__description {
+    order: initial;
+    flex-grow: 2.5;
+    margin-bottom: 81px;
+    row-gap: 36px;
+  }
+}
+@media (min-width: 375px) {
+  .compl-projects__switch-menu {
+    display: none;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__switch-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+  }
+}
+.compl-projects__slider {
+  margin: 0;
+  position: relative;
+  order: 1;
+  margin-bottom: 36px;
+}
+@media (min-width: 1256px) {
+  .compl-projects__slider {
+    display: none;
+  }
+}
+@media (min-width: 375px) {
+  .compl-projects__image {
+    display: none;
+  }
+}
+@media (min-width: 1256px) {
+  .compl-projects__image {
+    display: initial;
+  }
+}
+
+.switch-menu__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.switch-menu__list {
+  display: flex;
+  gap: 18px;
+  margin: 6px 30px;
+  padding: 0;
+  align-items: center;
+}
+.switch-menu__item {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+.switch-menu__item_active {
+  background-color: #fff;
 }
 
 .slider__button {
@@ -292,17 +476,40 @@
 
 .description__item {
   font-family: "Yeseva";
-  font-size: 0.875rem;
   font-weight: normal;
   color: #E3B873;
   list-style: none;
-  margin: 0 0 36px 0;
+  text-transform: uppercase;
+}
+@media (min-width: 375px) {
+  .description__item {
+    font-size: 0.875rem;
+    margin: 0 0 36px 0;
+  }
+}
+@media (min-width: 1256px) {
+  .description__item {
+    font-size: 1.125rem;
+    margin: 0;
+  }
 }
 .description__item:nth-last-of-type(-n+2) {
   margin: 0;
 }
 .description__paragraph {
-  margin: 18px 0 0 0;
+  text-transform: initial;
+}
+@media (min-width: 375px) {
+  .description__paragraph {
+    margin: 18px 0 0 0;
+    font-size: 0.6875rem;
+  }
+}
+@media (min-width: 375px) {
+  .description__paragraph {
+    margin: 9px 0 0 0;
+    font-size: 0.8125rem;
+  }
 }
 
 .online-control {
@@ -523,6 +730,11 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

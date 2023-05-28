@@ -1,0 +1,21 @@
+@use '../../global/variables' as *;
+
+.page {
+    &__body {
+        margin: 0;
+        max-width: 375px;
+        background-color: $color-chinese-black;
+        margin: 0 auto;
+        
+        @media (min-width: 1256px) {
+            max-width: none;
+            margin: none;
+        }
+    }
+
+    &__wrapper {
+        @media (min-width: $screen-xl) {
+            max-width: 1256px;
+        }
+    }
+}

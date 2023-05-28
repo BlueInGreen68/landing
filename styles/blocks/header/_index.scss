@@ -4,7 +4,6 @@
     font-family: "Nunito";
     font-size: 11px;
     line-height: 15px;
-    background-color: black;
 
     @media (min-width: 375px) {
         padding: 23px 18px 24px;
@@ -17,7 +16,6 @@
     &__wrapper {
         display: flex;
         align-items: center;
-        margin: 0 auto;
 
         @media (min-width: 375px) {
             gap: 56px;
@@ -26,7 +24,6 @@
 
         @media (min-width: 1256px) {
             gap: 0;
-            max-width: 1300px;
         }
     }
 

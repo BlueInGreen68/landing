@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <div class="header__wrapper"><a class="header__logo" href="#">IC "Repair Design Project"</a>
+      <div class="header__wrapper wrapper"><a class="header__logo" href="#">IC "Repair Design Project"</a>
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link_active link" href="#">HOME</a></li>
@@ -25,57 +25,70 @@
       </div>
     </header>
     <main class="page__main main">
-      <div class="main__section section-presentation">
-        <section class="section-presentation__wrapper">
-          <h1 class="section-presentation__header">
-            Turnkey Repair in the 
-            city of <span class="section-presentation__name-city">Rostov-on-Don</span>
-          </h1>
-          <p class="section-presentation__paragraph">
-             Get ready-made turnkey presentations on time
-            with work time saving up to 45 days and 20% from
-            cost of materials due to the organization of work
-          </p>
-          <div class="section-presentation__buttons">
-            <button class="section-presentation__button button">Calculate the cost</button>
-            <button class="section-presentation__button section-presentation__button_theme_application button">Submit your application</button>
+      <section class="main__section section-presentation">
+        <div class="section-presentation__wrapper">
+          <div class="section-presentation__info">
+            <h1 class="section-presentation__header">
+              Turnkey Repair in the 
+              city of <span class="section-presentation__name-city">Rostov-on-Don</span>
+            </h1>
+            <p class="section-presentation__paragraph">
+               Get ready-made turnkey presentations on time
+              with work time saving up to 45 days and 20% from
+              cost of materials due to the organization of work
+            </p>
+            <div class="section-presentation__buttons">
+              <button class="section-presentation__button section-presentation__button_box-shadow_yellow button">Calculate the cost</button>
+              <button class="section-presentation__button section-presentation__button_theme_application button">Submit your application</button>
+            </div>
           </div>
-        </section>
-      </div>
+        </div><img class="section-presentation__img" src="../images/photo/1/1-large.png" height="707">
+      </section>
       <div class="compl-projects">
-        <ul class="compl-projects__list">
-          <li class="compl-projects__item"> <a class="compl-project__link compl-project__link_active" href="#">Rostov-on-Don, Admiral</a></li>
-          <li class="compl-projects__item"> <a class="compl-project__link" href="#">Sochi thieves</a></li>
-          <li class="compl-projects__item"> <a class="compl-project__link" href="#">Rostov-on-Don, Admiral</a></li>
-        </ul>
-        <section class="compl-projects__info">
-          <h2 class="compl-projects__title title">
-             Completed 
-            Projects
-          </h2>
-          <p class="compl-projects__paragraph text">
-            Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
-            market we have made happy more than 1000 families
-          </p>
-          <ul class="compl-projects__description description">
-            <li class="description__item">City:
-              <p class="description__paragraph text">Rostov-on-Don LCD admiral</p>
-            </li>
-            <li class="description__item">Apartment Area:
-              <p class="description__paragraph text">81 m2</p>
-            </li>
-            <li class="description__item">Repair Time:
-              <p class="description__paragraph text">3.5 months</p>
-            </li>
-            <li class="description__item">Repair Cost:
-              <p class="description__paragraph text">Upon request</p>
-            </li>
+        <div class="compl-projects__wrapper wrapper">
+          <ul class="compl-projects__list">
+            <li class="compl-projects__item"><a class="compl-projects__link compl-projects__link_active" href="#">Rostov-on-Don, Admiral</a></li>
+            <li class="compl-projects__item"> <a class="compl-projects__link" href="#">Sochi thieves</a></li>
+            <li class="compl-projects__item"> <a class="compl-projects__link" href="#">Rostov-on-Don, Patrotic</a></li>
           </ul>
-          <figure class="compl-projects__slider slider"><img class="slider__image" src="../images/photo/2/2.png" alt="Пример комнаты">
-            <button class="slider__button slider__button_theme_previous" type="button"><img class="slider__svg" src="../images/svg/previous-arrow.svg"></button>
-            <button class="slider__button slider__button_theme_next" type="button"><img class="slider__svg" src="../images/svg/next-arrow.svg"></button>
-          </figure>
-        </section>
+          <section class="compl-projects__info">
+            <h2 class="compl-projects__title title">
+               Completed 
+              Projects
+            </h2>
+            <p class="compl-projects__paragraph text">
+              Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+              market we have made happy more than 1000 families
+            </p>
+            <figure class="compl-projects__slider slider"><img class="slider__image" src="../images/photo/2/2-mobile.png" alt="Пример комнаты">
+              <button class="slider__button slider__button_theme_previous" type="button"><img class="slider__svg" src="../images/svg/previous-arrow.svg"></button>
+              <button class="slider__button slider__button_theme_next" type="button"><img class="slider__svg" src="../images/svg/next-arrow.svg"></button>
+            </figure>
+            <ul class="compl-projects__description description">
+              <li class="description__item">City:
+                <p class="description__paragraph text">Rostov-on-Don LCD admiral</p>
+              </li>
+              <li class="description__item">Apartment Area:
+                <p class="description__paragraph text">81 m2</p>
+              </li>
+              <li class="description__item">Repair Time:
+                <p class="description__paragraph text">3.5 months</p>
+              </li>
+              <li class="description__item">Repair Cost:
+                <p class="description__paragraph text">Upon request</p>
+              </li>
+            </ul>
+            <div class="compl-projects__switch-menu switch-menu">
+              <button class="switch-menu__button switch-menu__button_theme_previous" type="button"><img class="switch-menu__svg" src="../images/svg/long-previous-arrow.svg"></button>
+              <ul class="switch-menu__list">
+                <li class="switch-menu__item switch-menu__item_active"></li>
+                <li class="switch-menu__item"></li>
+                <li class="switch-menu__item"></li>
+              </ul>
+              <button class="switch-menu__button switch-menu__button_theme_next" type="button"><img class="switch-menu__svg" src="../images/svg/long-next-arrow.svg"></button>
+            </div>
+          </section><img class="compl-projects__image" src="../images/photo/2/2-large.png" alt="Пример команты">
+        </div>
       </div>
       <section class="online-control">
         <h2 class="online-control__title online-control__title_theme_white title">Online control</h2><img class="online-control__image" src="../images/svg/camera.svg" width="114" height="28">

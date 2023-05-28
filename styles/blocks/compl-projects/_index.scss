@@ -2,31 +2,126 @@
 
 .compl-projects {
     margin: 0 0 58px 0;
-    padding: 36px 17px;
+    padding: 36px 17px 0;
     text-align: center;
+    
+    @media (min-width: $screen-xl) {
+        padding: 107px 42px 0;
+        margin-bottom: 90px;
+    }
+
+    &__wrapper {
+        @media (min-width: $screen-xl) {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            row-gap: 45px;
+            column-gap: 50px;
+        }
+    }
 
     &__list {
-        @media (min-width: 375px) {
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: $screen-es) {
             display: none;
+        }
+
+        @media (min-width: $screen-xl) {
+            display: initial;
+            grid-column: 2/3;
+            display: flex;
+            gap: 60px;
         }
     }
 
     &__info {
         display: flex;
         flex-direction: column;
+
+        @media (min-width: $screen-xl) {
+            text-align: left;
+        }
+    }
+
+    &__item {
+        @media (min-width: $screen-xl) {
+            list-style: none;
+        }
+    }
+
+    &__link {
+        @media (min-width: $screen-xl) {
+            font-family: "Yeseva";
+            font-size: .875rem;
+            color: rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        &_active {
+            color: $color-middle-yellow;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 6px;
+        }
     }
 
     &__title {
-        margin: 0 auto 35px;
         width: 235px;
+
+        @media (min-width: $screen-es) {
+            margin: 0 auto 35px;
+        }
+        
+        @media (min-width: $screen-xl) {
+            margin: 0 0 35px;
+            text-align: left;
+            font-size: 1.75rem;
+        }
     }
 
     &__paragraph {
-        margin: 0 0 75px 0;
+        @media (min-width: $screen-es) {
+            margin: 0 0 75px 0;
+        }
+
+        @media (min-width: $screen-xl) {
+            text-align: left;
+            font-size: 0.875rem;
+            width: 442px;
+        }
     }
 
     &__description {
-        order: 2;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+
+        @media (min-width: $screen-es) {
+            order: 2;
+        }
+        
+        @media (min-width: $screen-xl) {
+            order: initial;
+            flex-grow: 2.5;
+            margin-bottom: 81px;
+            row-gap: 36px;
+        }
+    }
+
+    &__switch-menu {
+        @media (min-width: $screen-es) {
+            display: none;
+        }
+
+        @media (min-width: $screen-xl) {
+            display: flex;
+            flex-grow: 1;
+            align-items: flex-end;
+        }
     }
 
     &__slider {
@@ -34,13 +129,19 @@
         position: relative;
         order: 1;
         margin-bottom: 36px;
+
+        @media (min-width: $screen-xl) {
+            display: none;
+        }
     }
-    
-    &__description {
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: left;
+
+    &__image {
+        @media (min-width: $screen-es) {
+            display: none;
+        }
+
+        @media (min-width: $screen-xl) {
+            display: initial;
+        }
     }
 }
