@@ -2,10 +2,26 @@
 
 .online-control {
     padding: 0 18px 28px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @media (min-width: $screen-es) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: $screen-xl) {
+        position: relative;
+    }
+
+    &__section {
+        @media (min-width: $screen-xl) {
+            position: absolute;
+            top: -317px;
+            left: 0;
+        }
+    }
+
     
     &__title {
         margin-bottom: 20px;
@@ -28,13 +44,29 @@
         position: absolute;
         background-color: $color-middle-yellow;
         border: 0;
-        border-radius: 30px;
-        padding: 10px 11px 8px 13px;
+
+        @media (min-width: $screen-es) {
+            border-radius: 30px;
+            padding: 10px 11px 8px 13px;
+        }
+
+        @media (min-width: $screen-xl) {
+            border-radius: 60px;
+            padding: 28px 30px 27px 35px;
+        }
 
         &_theme_play {
             position: absolute;
-            top: 42%;
-            left: 45%;
+
+            @media (min-width: $screen-es) {
+                top: 42%;
+                left: 45%;
+            }
+
+            @media (min-width: $screen-xl) {
+                top: 42%;
+                left: 48%;
+            }
         }
     }
 

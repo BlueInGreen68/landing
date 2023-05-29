@@ -1,28 +1,35 @@
-section.online-control
-    h2.online-control__title.online-control__title_theme_white.title Online control
-    img.online-control__image(src="../images/svg/camera.svg" width="114" height="28")
-    figure.online-control__video
-        img.online-control__preview(src="../images/photo/3/3-mobile.png" alt="Пример комнаты")
-        button.online-control__button.online-control__button_theme_play(type="button")
-            img.online-control__svg(src="../images/svg/play.svg")
-    img.online-control__hr(src="../images/svg/hr.svg")
-    p.online-control__paragraph.text
-        | At each facility, a camera is installed that broadcasts the progress 
-        | of work on the clock. At any time, you can go to our website and monitor 
-        | the progress of work in your apartment. You can watch the live broadcast 
-        | from one of our facilities!
-        | Leave a request below and you will receive a link to the broadcast.
-    form.form(action="#" method="post")
-        div.form__wrapper
-            label.form__label(for="fullName") Name
-            input.form__input.input(type="text" id="fullName" name="fullName" placeholder="What is your name:")
-        div.form__wrapper.form__wrapper_margin-bottom_27px
-            label.form__label(for="phone") Phone
-            input.form__input.input(type="text" id="phone" name="phone" placeholder="Your phone number:")
-        div.form__wrapper.form__wrapper_flex_column
-            input.form__button.form__button_order_1.form__button_position_relative.button(type="button" value="submit")
-            div.form__wrapper.form__wrapper_order_0.form__wrapper_margin_none
-                label.form__label.form__label_inline-flex(for="personalData") 
-                    input.form__checkbox.form__checkbox_theme_custom-check(type="checkbox" id="personalData" checked)
-                    span.form__span I agree to the processing of personal data
+div.online-control
+    section.online-control__section
+        h2.online-control__title.online-control__title_theme_white.title Online control
+        img.online-control__image(src="../images/svg/camera.svg" width="114" height="28")
+        figure.online-control__video
+            picture.online-control__picture
+                source.online-control__source(media="(max-width: 1255px)" srcset="../images/photo/3/3-mobile.png")
+                source.online-control__source(media="(min-width: 1256px)" srcset="../images/photo/3/3-home.png")
+                img.online-control__preview(src="../images/photo/3/3-home.png" alt="Пример комнаты")
+            button.online-control__button.online-control__button_theme_play(type="button")
+                picture.online-control__picture
+                    source.online-control__source(media="(max-width: 1255px)" srcset="../images/svg/play.svg")
+                    source.online-control__source(media="(min-width: 1256px)" srcset="../images/svg/play-xl.svg")
+                    img.online-control__svg(src="../images/svg/play-xl.svg")
+        img.online-control__hr(src="../images/svg/hr.svg")
+        p.online-control__paragraph.text
+            | At each facility, a camera is installed that broadcasts the progress 
+            | of work on the clock. At any time, you can go to our website and monitor 
+            | the progress of work in your apartment. You can watch the live broadcast 
+            | from one of our facilities!
+            | Leave a request below and you will receive a link to the broadcast.
+        form.form(action="#" method="post")
+            div.form__wrapper
+                label.form__label(for="fullName") Name
+                input.form__input.input(type="text" id="fullName" name="fullName" placeholder="What is your name:")
+            div.form__wrapper.form__wrapper_margin-bottom_27px
+                label.form__label(for="phone") Phone
+                input.form__input.input(type="text" id="phone" name="phone" placeholder="Your phone number:")
+            div.form__wrapper.form__wrapper_flex_column
+                input.form__button.form__button_order_1.form__button_position_relative.button(type="button" value="submit")
+                div.form__wrapper.form__wrapper_order_0.form__wrapper_margin_none
+                    label.form__label.form__label_inline-flex(for="personalData") 
+                        input.form__checkbox.form__checkbox_theme_custom-check(type="checkbox" id="personalData" checked)
+                        span.form__span I agree to the processing of personal data
 
