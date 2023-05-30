@@ -1,13 +1,16 @@
 @use '../../global/variables' as *;
 
 .compl-projects {
-    margin: 0 0 58px 0;
-    padding: 36px 17px 0;
     text-align: center;
+
+    @media (min-width: $screen-es) {
+        margin: 0 0 58px 0;
+        padding: 36px 17px 0;
+    }
     
     @media (min-width: $screen-xl) {
-        padding: 107px 42px 400px;
-        margin-bottom: 90px;
+        padding: 107px 42px 504px;
+        margin: 0;
     }
 
     &__wrapper {

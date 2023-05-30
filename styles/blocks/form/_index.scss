@@ -3,17 +3,27 @@
 .form {
     font-family: "Nunito";
     width: 100%;
-
     &__wrapper {
-        text-align: left;
-        margin-bottom: 63px;
-
-        &_margin-bottom_27px {
-            margin-bottom: 27px;
+        @media (min-width: $screen-es) {
+            margin-bottom: 63px;
+            text-align: left;
+            position: relative;
         }
 
-        &_margin-bottom_63px {
-            margin-bottom: 63px;
+        @media (min-width: $screen-xl) {
+            margin: 0;
+        }
+
+        @media (min-width: $screen-es) {
+            &_margin-bottom_27px {
+                margin-bottom: 27px;
+            }
+        }
+
+        @media (min-width: $screen-xl) {
+            &_margin-bottom_27px {
+                margin-bottom: 0;
+            }
         }
 
         &_margin-bottom_68px {
@@ -24,24 +34,26 @@
             margin: 0;
         }
 
-        &_flex_column {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
         &_order_0 {
             order: 0;
+        }
+
+        &_grid-span {
+            grid-column: span 3;
+            justify-self: center;
         }
     }
 
     &__label {
-        color: rgba(255, 255, 255, 0.5);
         font-size: 13px;
 
-        &_inline-flex {
-            display: inline-flex;
-            align-items: flex-end;
+        @media (min-width: $screen-es) {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (min-width: $screen-xl) {
+            display: block;
+            color: rgba(54, 54, 54, 0.5);
         }
     }
     
@@ -52,6 +64,7 @@
         background-color: $color-middle-yellow;
         border-radius: 1px;
         box-shadow: 0 0 0 0.1em $color-middle-yellow;
+        margin-top: -4px;
 
         &_theme_custom-check {
             appearance: none;
@@ -67,25 +80,35 @@
 
     &__span {
         padding-left: 2rem;
-        color: white;
         font-size: .875rem;
+
+        @media (min-width: $screen-es) {
+            color: white;
+        }
+
+        @media (min-width: $screen-xl) {
+            color: #181818;
+        } 
     }
 
     &__button {
         font-family: "Nunito";
         font-size: 13px;
         font-style: normal;
-        padding: 20px 124px;
         text-transform: uppercase;
 
-        &_order_1 {
+        @media (min-width: $screen-es) {
+            padding: 20px 124px;
+            top: 260px;
+            position: absolute;
+            width: 100%;
             order: 1;
         }
 
-        &_position_relative {
-            top: 83px;
-            position: absolute;
-            width: 100%;
+        @media (min-width: $screen-xl) {
+            padding: 20px 75px 15px;
+            position: static;
+            order: 0;
         }
     }
 

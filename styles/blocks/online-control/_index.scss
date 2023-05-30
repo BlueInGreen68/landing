@@ -1,28 +1,28 @@
 @use '../../global/variables' as *;
 
 .online-control {
-    padding: 0 18px 28px;
     align-items: center;
     text-align: center;
 
     @media (min-width: $screen-es) {
         display: flex;
         flex-direction: column;
+        padding: 0 18px 88px;
     }
 
     @media (min-width: $screen-xl) {
         position: relative;
+        background-color: white;
+        padding: 270px 243px 148px;
     }
 
-    &__section {
+    &__header {
         @media (min-width: $screen-xl) {
             position: absolute;
-            top: -317px;
-            left: 0;
-        }
+            top: -344px;
+        } 
     }
 
-    
     &__title {
         margin-bottom: 20px;
 
@@ -57,24 +57,42 @@
 
         &_theme_play {
             position: absolute;
-
-            @media (min-width: $screen-es) {
-                top: 42%;
-                left: 45%;
-            }
-
-            @media (min-width: $screen-xl) {
-                top: 42%;
-                left: 48%;
-            }
+            top: 42%;
+            left: 45%;
         }
     }
 
     &__hr {
-        margin-bottom: 22px;
+        margin-bottom: 35px;
     }
 
     &__paragraph {
-        margin: 0 0 63px 0;
+        @media (min-width: $screen-es) {
+            margin: 0 0 63px 0;
+        }
+
+        @media (min-width: $screen-xl) {
+            margin: 0 auto 94px;
+            line-height: 2.06;
+            color: $color-jet;
+            width: 681px;
+        }
+    }
+
+    &__form {
+        
+        @media (min-width: $screen-es) {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        @media (min-width: $screen-xl) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) 200px;
+            row-gap: 38px;
+            column-gap: 50px;
+            align-items: center;
+        }
     }
 }

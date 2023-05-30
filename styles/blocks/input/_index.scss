@@ -1,14 +1,28 @@
 @use '../../global/variables' as *;
 
 .input {
-    background-color: #181818;
+    background-color: transparent;
     border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-    color: white;
-    width: 100%;
+    
+    @media (min-width: $screen-es) {
+        width: 100%;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    }
+
+    @media (min-width: $screen-xl) {
+        width: 231px;
+        border-bottom: 2px solid #3636364D;
+    }
 
     &::placeholder {
-        color: white;
         font-size: .875rem;
+
+        @media (min-width: $screen-es) {
+            color: white;
+        }
+
+        @media (min-width: $screen-es) {
+            color: $color-jet;
+        }
     }
 }

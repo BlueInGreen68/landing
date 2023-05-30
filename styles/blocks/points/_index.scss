@@ -1,0 +1,81 @@
+@use '../../global/variables' as *;
+
+.points {
+    background: url("../images/photo/bg-house.png") no-repeat, white;
+    padding: 117px 0 0 196px;
+
+    @media (min-width: $screen-es) {
+        display: none;
+    }
+
+    @media (min-width: $screen-xl) {
+        display: block;
+    }
+    
+    &__wrapper {
+        display: flex;
+        gap: 166px;
+    }
+
+    &__form {
+
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        counter-reset: point 0;
+    }
+
+    &__item {
+        font-family: "Nunito";
+        font-size: 14px;
+        line-height: 1.9;
+        list-style: none;
+        counter-increment: point 1;
+        margin-bottom: 108px;
+
+        &:before {
+            content: "0" counter(point);
+            font-family: "Yeseva";
+            font-size: 18px;
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 27px;
+            color: white;
+            box-shadow: 0px 10px 15px rgba(227, 184, 115, 0.5);
+            width: 42px;
+            height: 42px;
+            border-radius: 30px;
+            outline: 10px solid white;
+            background-color: $color-middle-yellow;
+        }
+
+        &_display_inline-flex {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &_margin_none {
+            margin: 0;
+        }
+    }
+
+    &__section {
+        padding: 28px 50px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 506px;
+
+    }
+
+    &__header {
+        font-family: "Nunito";
+        font-size: 18px;
+        font-weight: normal;
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
+}

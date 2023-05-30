@@ -3,4 +3,8 @@
 .text {
     font-family: "Nunito";
     color: white;
+    
+    &_theme_large {
+        color: $color-jet;
+    }
 }
