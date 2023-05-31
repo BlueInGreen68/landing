@@ -2,28 +2,13 @@
 
 .form {
     font-family: "Nunito";
-    width: 100%;
+    text-align: left;
+    
     &__wrapper {
-        @media (min-width: $screen-es) {
-            margin-bottom: 63px;
-            text-align: left;
-            position: relative;
-        }
+        margin-bottom: 63px;
 
-        @media (min-width: $screen-xl) {
-            margin: 0;
-        }
-
-        @media (min-width: $screen-es) {
-            &_margin-bottom_27px {
-                margin-bottom: 27px;
-            }
-        }
-
-        @media (min-width: $screen-xl) {
-            &_margin-bottom_27px {
-                margin-bottom: 0;
-            }
+        &_margin-bottom_27px {
+            margin-bottom: 27px;
         }
 
         &_margin-bottom_68px {
@@ -42,18 +27,34 @@
             grid-column: span 3;
             justify-self: center;
         }
+
+        &_position_relative {
+            position: relative;
+        }
     }
 
     &__label {
         font-size: 13px;
 
-        @media (min-width: $screen-es) {
-            color: rgba(255, 255, 255, 0.5);
+        &_display_block {
+            display: block;
+        }
+    }
+
+    &__input {
+        background-color: transparent;
+        border: none;
+
+        &::placeholder {
+            font-size: .875rem;
         }
 
-        @media (min-width: $screen-xl) {
-            display: block;
-            color: rgba(54, 54, 54, 0.5);
+        &_width_100 {
+            width: 100%;
+        }
+
+        &_width_231px {
+            width: 231px;
         }
     }
     
@@ -81,14 +82,6 @@
     &__span {
         padding-left: 2rem;
         font-size: .875rem;
-
-        @media (min-width: $screen-es) {
-            color: white;
-        }
-
-        @media (min-width: $screen-xl) {
-            color: #181818;
-        } 
     }
 
     &__button {
@@ -114,5 +107,41 @@
 
     &_margin-bottom_46px {
         margin-bottom: 46px;
+    }
+    
+    &_theme_dark {
+        .form__label {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form__input {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        .form__span {
+            color: white;
+        }
+    }
+
+    &_theme_white {
+        .form__label {
+            color: rgba(54, 54, 54, 0.5);
+        }
+
+        .form__input {
+            border-bottom: 2px solid #3636364D;
+
+            &::placeholder {
+                color: $color-jet;
+            }
+        }
+
+        .form__span {
+            color: #181818;
+        }
     }
 }

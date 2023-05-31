@@ -21,13 +21,25 @@ div.online-control
                 | the progress of work in your apartment. You can watch the live broadcast 
                 | from one of our facilities!
                 | Leave a request below and you will receive a link to the broadcast.
-            form.online-control__form.form(action="#" method="post")
+            form.online-control__form.form.form_theme_dark(action="#" method="post")
                 div.form__wrapper
                     label.form__label(for="fullName") Name
-                    input.form__input.input(type="text" id="fullName" name="fullName" placeholder="What is your name:")
+                    input.form__input.form__input_width_100(type="text" id="fullName" name="fullName" placeholder="What is your name:")
                 div.form__wrapper.form__wrapper_margin-bottom_27px
                     label.form__label(for="phone") Phone
-                    input.form__input.input(type="text" id="phone" name="phone" placeholder="Your phone number:")
+                    input.form__input.form__input_width_100(type="text" id="phone" name="phone" placeholder="Your phone number:")
+                input.form__button.button(type="button" value="submit")
+                div.form__wrapper.form__wrapper_order_0.form__wrapper_margin_none.form__wrapper_grid-span
+                    label.form__label(for="personalData") 
+                        input.form__checkbox.form__checkbox_theme_custom-check(type="checkbox" id="personalData" checked)
+                        span.form__span I agree to the processing of personal data
+            form.online-control__form.form.form_theme_white(action="#" method="post")
+                div.form__wrapper
+                    label.form__label(for="fullName") Name
+                    input.form__input.form__input_width_231px(type="text" id="fullName" name="fullName" placeholder="What is your name:")
+                div.form__wrapper.form__wrapper_margin-bottom_27px
+                    label.form__label(for="phone") Phone
+                    input.form__input.form__input_width_100(type="text" id="phone" name="phone" placeholder="Your phone number:")
                 input.form__button.button(type="button" value="submit")
                 div.form__wrapper.form__wrapper_order_0.form__wrapper_margin_none.form__wrapper_grid-span
                     label.form__label(for="personalData") 
