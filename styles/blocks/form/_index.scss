@@ -4,8 +4,52 @@
     font-family: "Nunito";
     text-align: left;
     
+    @media (min-width: $screen-es) {
+        &_theme_dark {
+            .form__label {
+                color: rgba(255, 255, 255, 0.5);
+            }
+    
+            .form__input {
+                padding-bottom: 8px;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    
+                &::placeholder {
+                    color: white;
+                }
+            }
+    
+            .form__span {
+                color: white;
+            }
+        }
+    }
+
+    @media (min-width: $screen-xl) {
+        &_theme_white {
+            .form__label {
+                color: rgba(54, 54, 54, 0.5);
+            }
+    
+            .form__input {
+                padding-bottom: 8px;
+                border-bottom: 2px solid #3636364D;
+    
+                &::placeholder {
+                    color: $color-jet;
+                }
+            }
+    
+            .form__span {
+                color: #181818;
+            }
+        }
+    }
+
     &__wrapper {
-        margin-bottom: 63px;
+        @media (min-width: $screen-es) {
+            margin-bottom: 63px;
+        }
 
         &_margin-bottom_27px {
             margin-bottom: 27px;
@@ -13,10 +57,6 @@
 
         &_margin-bottom_68px {
             margin-bottom: 68px;
-        }
-
-        &_margin_none {
-            margin: 0;
         }
 
         &_order_0 {
@@ -31,6 +71,10 @@
         &_position_relative {
             position: relative;
         }
+
+        &_margin_none {
+            margin: 0;
+        }
     }
 
     &__label {
@@ -44,13 +88,10 @@
     &__input {
         background-color: transparent;
         border: none;
+        width: 100%;
 
         &::placeholder {
             font-size: .875rem;
-        }
-
-        &_width_100 {
-            width: 100%;
         }
 
         &_width_231px {
@@ -92,10 +133,17 @@
 
         @media (min-width: $screen-es) {
             padding: 20px 124px;
-            top: 260px;
             position: absolute;
             width: 100%;
             order: 1;
+
+            &_top_275px {
+                top: 275px;
+            }
+
+            &_top_365px {
+                top: 365px;
+            }
         }
 
         @media (min-width: $screen-xl) {
@@ -103,45 +151,13 @@
             position: static;
             order: 0;
         }
+
+        
     }
 
-    &_margin-bottom_46px {
-        margin-bottom: 46px;
-    }
-    
-    &_theme_dark {
-        .form__label {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .form__input {
-            border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-
-            &::placeholder {
-                color: white;
-            }
-        }
-
-        .form__span {
-            color: white;
-        }
-    }
-
-    &_theme_white {
-        .form__label {
-            color: rgba(54, 54, 54, 0.5);
-        }
-
-        .form__input {
-            border-bottom: 2px solid #3636364D;
-
-            &::placeholder {
-                color: $color-jet;
-            }
-        }
-
-        .form__span {
-            color: #181818;
-        }
+    &_margin-bottom_164px {
+        margin-bottom: 164px;
     }
 }
+
+Надо сделать отдельную форму для блока OnlineControl, потому что без js две темы иметь невозможно

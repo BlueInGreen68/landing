@@ -2,7 +2,14 @@
 
 .types-of-repair {
     background-color: white;
-    padding: 83px 18px 0;
+
+    @media (min-width: $screen-es) {
+        padding: 83px 18px 160px;
+    }
+    
+    @media (min-width: $screen-xl) {
+        padding: 83px 18px 0;
+    }
 
     &__header {
         text-align: center;

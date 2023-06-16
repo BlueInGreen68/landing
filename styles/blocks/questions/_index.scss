@@ -22,4 +22,10 @@
             margin-bottom: 42px;
         }
     }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 }
