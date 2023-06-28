@@ -116,7 +116,23 @@
               from one of our facilities!
               Leave a request below and you will receive a link to the broadcast.
             </p>
-            <form class="online-control__form form form_theme_dark form_theme_white" action="#" method="post">
+            <form class="online-control__form form form_theme_dark" action="#" method="post">
+              <div class="form__wrapper">
+                <label class="form__label" for="fullName">Name</label>
+                <input class="form__input" type="text" id="fullName" name="fullName" placeholder="What is your name:">
+              </div>
+              <div class="form__wrapper form__wrapper_margin-bottom_27px form__wrapper_margin_none">
+                <label class="form__label" for="phone">Phone</label>
+                <input class="form__input" type="text" id="phone" name="phone" placeholder="Your phone number:">
+              </div>
+              <input class="form__button form__button_top_275px button" type="button" value="submit">
+              <div class="form__wrapper form__wrapper_order_0 form__wrapper_margin_none form__wrapper_grid-span">
+                <label class="form__label" for="personalData"> 
+                  <input class="form__checkbox form__checkbox_theme_custom-check" type="checkbox" id="personalData" checked><span class="form__span">I agree to the processing of personal data</span>
+                </label>
+              </div>
+            </form>
+            <form class="online-control__form form form_theme_white" action="#" method="post">
               <div class="form__wrapper">
                 <label class="form__label" for="fullName">Name</label>
                 <input class="form__input" type="text" id="fullName" name="fullName" placeholder="What is your name:">

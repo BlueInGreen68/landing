@@ -600,6 +600,9 @@
     flex-direction: column;
     position: relative;
   }
+  .online-control__form.form_theme_white {
+    display: none;
+  }
 }
 @media (min-width: 1256px) {
   .online-control__form {
@@ -608,6 +611,12 @@
     row-gap: 38px;
     column-gap: 50px;
     align-items: center;
+  }
+  .online-control__form.form_theme_dark {
+    display: none;
+  }
+  .online-control__form.form_theme_white {
+    display: grid;
   }
 }
 

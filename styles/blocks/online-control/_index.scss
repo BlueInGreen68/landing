@@ -85,6 +85,10 @@
             display: flex;
             flex-direction: column;
             position: relative;
+
+            &.form_theme_white {
+                display: none;
+            }
         }
 
         @media (min-width: $screen-xl) {
@@ -93,6 +97,14 @@
             row-gap: 38px;
             column-gap: 50px;
             align-items: center;
+
+            &.form_theme_dark {
+                display: none;
+            }
+    
+            &.form_theme_white {
+                display: grid;
+            }
         }
     }
 }
