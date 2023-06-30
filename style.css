@@ -665,6 +665,9 @@
 .form__wrapper_margin-bottom_68px {
   margin-bottom: 68px;
 }
+.form__wrapper_margin-bottom_39px {
+  margin-bottom: 39px;
+}
 .form__wrapper_order_0 {
   order: 0;
 }
@@ -677,6 +680,10 @@
 }
 .form__wrapper_margin_none {
   margin: 0;
+}
+.form__wrapper_flex_column {
+  display: flex;
+  flex-direction: column;
 }
 .form__label {
   font-size: 13px;
@@ -743,6 +750,12 @@
     position: static;
     order: 0;
   }
+}
+.form__button_theme_call {
+  width: 213px;
+  height: 51px;
+  padding: 19px 21px 19px 22px;
+  align-self: flex-end;
 }
 .form_margin-bottom_164px {
   margin-bottom: 164px;
@@ -946,7 +959,7 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-  margin: 0;
+  margin: 0 0 39px 0;
   text-align: center;
 }
 

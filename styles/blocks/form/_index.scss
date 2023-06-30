@@ -59,6 +59,10 @@
             margin-bottom: 68px;
         }
 
+        &_margin-bottom_39px {
+            margin-bottom: 39px;
+        }
+
         &_order_0 {
             order: 0;
         }
@@ -74,6 +78,11 @@
 
         &_margin_none {
             margin: 0;
+        }
+
+        &_flex_column {
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -150,6 +159,13 @@
             padding: 20px 75px 15px;
             position: static;
             order: 0;
+        }
+
+        &_theme_call {
+            width: 213px;
+            height: 51px;
+            padding: 19px 21px 19px 22px;
+            align-self: flex-end;
         }
     }
 
