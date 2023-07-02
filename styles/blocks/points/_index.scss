@@ -2,7 +2,7 @@
 
 .points {
     background: url("../images/photo/bg-house.png") no-repeat, white;
-    padding: 117px 0 0 196px;
+    padding: 117px 0 243px 196px;
 
     @media (min-width: $screen-es) {
         display: none;
@@ -15,6 +15,7 @@
     &__wrapper {
         display: flex;
         gap: 166px;
+        margin-bottom: 39px;
     }
 
     &__form {
@@ -79,5 +80,35 @@
         color: white;
         margin: 0 0 39px 0;
         text-align: center;
+    }
+
+    &__sale {
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding-left: 790px;
+    }
+
+    &__circle {
+        position: relative;
+        width: 72px;
+        height: 72px;
+        border-radius: 72px;
+        background-color: $color-middle-yellow;
+        box-shadow: 0px 10px 20px 0px rgba(237, 192, 120, 0.20);
+    }
+    
+    &__pig {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+    
+    &__sale-caption {
+        font-family: $font-family-text;
+        font-size: 18px;
+        line-height: 1.4;
+        color: $color-middle-yellow;;
+        align-self: center;
     }
 }
