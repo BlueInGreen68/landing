@@ -42,4 +42,56 @@
         bottom: -21px;
         text-align: center;
     }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin-bottom: 11px;
+    }
+
+    &__photo {
+        border-radius: 76px;
+    }
+
+    &__full-name {
+        font-family: $font-family-heading;
+        font-size: 18px;
+    }
+
+    &__paragraph {
+        font-family: $font-family-text;
+        font-size: 13px;
+        line-height: 1.8;
+        color: $color-shark-fin;
+        margin: 0;
+
+        &_margin-bottom_18 {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__project-data {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 294px;
+        background-color: $color-middle-yellow;
+        padding: 0 25px 0 17px;
+        box-shadow: 5px 5px 20px 0px rgba(227, 184, 115, 0.50);
+    }
+
+    &__paragraph-square {
+        font-family: $font-family-heading;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    &__paragraph-time {
+        font-family: $font-family-heading;
+        font-size: 17px;
+        line-height: 1.4;
+    }
 }

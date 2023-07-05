@@ -1,31 +1,52 @@
 @use '../../global/variables' as *;
 
 .questions {
-    padding: 173px 18px 49px;
 
-    &__title {
-        margin-bottom: 52px;
+    @media (min-width: $screen-es) {
+        padding: 173px 18px 49px;
 
-        &_theme_white {
-            color: white;
+        &__title {
+            margin-bottom: 52px;
+    
+            &_theme_white {
+                color: white;
+            }
+    
+            &_margin-bottom_24px {
+                margin-bottom: 24px;
+            }    
         }
-
-        &_margin-bottom_24px {
-            margin-bottom: 24px;
-        }    
+    
+        &__image {
+            max-width: 100%;
+    
+            &_margin-bottom_42px {
+                margin-bottom: 42px;
+            }
+        }
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
     }
 
-    &__image {
-        max-width: 100%;
-
-        &_margin-bottom_42px {
-            margin-bottom: 42px;
-        }
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
+    @media (min-width: $screen-xl) {
+        width: 883px;
+        margin: 0 auto;
+        padding: 35px 182px;
+        background-color: #181818;
         position: relative;
+        top: -223px;
+        left: 0;
+
+        &__form {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            column-gap: 60px;
+        }
     }
+    
 }

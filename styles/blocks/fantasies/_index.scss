@@ -2,6 +2,14 @@
 
 .fantasies {
 
+    @media (min-width: $screen-es) {
+        display: none;
+    }
+
+    @media (min-width: $screen-xl) {
+        display: block;
+    }
+
     background: url(../images/photo/fantasies/5.png) left top / 100% no-repeat;
     object-fit: cover;
     height: 864px;
