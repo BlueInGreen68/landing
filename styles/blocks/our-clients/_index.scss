@@ -1,0 +1,60 @@
+@use '../../global/variables' as *;
+
+.our-clients {
+    background: url(../images/photo/our-clients/bg-left.png) bottom left 325px no-repeat,
+                url(../images/photo/our-clients/bg-right.png) bottom right 325px no-repeat,
+                white;
+
+    @media (min-width: $screen-es) {
+        display: none;
+    }
+    
+    @media (min-width: $screen-xl) {
+        display: block;
+        padding: 110px 18px 355px;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+
+        &_theme_black {
+            color: black;
+        }
+
+        &_margin_none {
+            margin: 0;
+        }
+    }
+
+    &__image {
+        margin-bottom: 25px;
+    }
+
+    &__statistics {
+        font-family: $font-family-text;
+        font-size: 18px;
+        width: 476px;
+        margin: 0 auto 39px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $screen-xl) {
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+
+    &__card {
+        width: 376px;
+        padding: 22px 32px 70px 20px;
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    }
+}
