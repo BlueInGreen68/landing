@@ -23,6 +23,10 @@
                 color: white;
             }
         }
+
+        &_margin-bottom_164px {
+            margin-bottom: 164px;
+        }
     }
 
     @media (min-width: $screen-xl) {
@@ -44,17 +48,48 @@
                 color: #181818;
             }
         }
+
+
+        &_margin-bottom_164px {
+            margin-bottom: 0;
+        }
     }
 
     &__wrapper {
         @media (min-width: $screen-es) {
             margin-bottom: 63px;
+
+            &_margin_auto {
+                margin: 0 auto;
+            }
+
+            &_margin_none {
+                margin: 0;
+            }
+
+            &_margin-bottom_27px {
+                margin-bottom: 27px;
+            }
         }
 
-        &_margin-bottom_27px {
-            margin-bottom: 27px;
-        }
+        @media (min-width: $screen-xl) {
+            &_margin_none {
+                margin: 0;
+            }
 
+            &_margin_auto {
+                margin: 0 auto;
+            }
+
+            &_margin-bottom_47px {
+                margin-bottom: 47px;
+            }
+
+            &_margin-bottom_50px {
+                margin-bottom: 50px;
+            }
+        }
+        
         &_margin-bottom_68px {
             margin-bottom: 68px;
         }
@@ -76,13 +111,17 @@
             position: relative;
         }
 
-        &_margin_none {
-            margin: 0;
-        }
-
         &_flex_column {
             display: flex;
             flex-direction: column;
+        }
+
+        &_align-self_center {
+            align-self: center;
+        }
+
+        &_width_100 {
+            width: 100%;
         }
     }
 
@@ -142,7 +181,6 @@
 
         @media (min-width: $screen-es) {
             padding: 20px 124px;
-            position: absolute;
             width: 100%;
             order: 1;
 
@@ -153,14 +191,24 @@
             &_top_365px {
                 top: 365px;
             }
+
+            &_position_absolute {
+                position: absolute;
+            }
         }
 
         @media (min-width: $screen-xl) {
             padding: 20px 75px 15px;
-            position: static;
             order: 0;
         }
 
+        &_theme_have-any-question {
+            @media (min-width: $screen-xl) {
+                width: 200px;
+                height: 51px;
+                padding: 20px 54px;
+            }
+        }
         &_theme_call {
             width: 213px;
             height: 51px;
@@ -168,10 +216,4 @@
             align-self: flex-end;
         }
     }
-
-    &_margin-bottom_164px {
-        margin-bottom: 164px;
-    }
 }
-
-100% ширины не у инпута нужно ставить, а у обёртки инпута

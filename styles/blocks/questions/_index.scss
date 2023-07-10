@@ -1,7 +1,6 @@
 @use '../../global/variables' as *;
 
 .questions {
-
     @media (min-width: $screen-es) {
         padding: 173px 18px 49px;
 
@@ -49,4 +48,7 @@
         }
     }
     
+    &__wrapper {
+        background: url('../images/photo/map/bg-home.png') no-repeat;
+    }
 }
