@@ -1,15 +1,16 @@
 @use '../../global/variables' as *;
 
-.header {
+.footer {
     font-family: "Nunito";
     font-size: 11px;
     line-height: 15px;
 
     @media (min-width: $screen-es) {
-        padding: 23px 18px 24px;
+        display: none;
     }
 
     @media (min-width: $screen-xl) {
+        display: block;
         padding: 24px 90px 22px 92px;
     }
 

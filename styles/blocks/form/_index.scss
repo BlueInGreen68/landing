@@ -49,6 +49,12 @@
             }
         }
 
+        &_theme_dark {
+            .form__input {
+                border-bottom: 2px solid #FFFFFF24;
+            }
+        }
+
 
         &_margin-bottom_164px {
             margin-bottom: 0;
@@ -203,6 +209,13 @@
         }
 
         &_theme_have-any-question {
+            @media (min-width: $screen-es) {
+                width: 340px;
+                height: 51px;
+                padding: 20px 54px;
+                margin-bottom: 65px;
+            }
+
             @media (min-width: $screen-xl) {
                 width: 200px;
                 height: 51px;

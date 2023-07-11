@@ -656,6 +656,9 @@
   .form_theme_white .form__span {
     color: #181818;
   }
+  .form_theme_dark .form__input {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1411764706);
+  }
   .form_margin-bottom_164px {
     margin-bottom: 0;
   }
@@ -779,6 +782,14 @@
   .form__button {
     padding: 20px 75px 15px;
     order: 0;
+  }
+}
+@media (min-width: 375px) {
+  .form__button_theme_have-any-question {
+    width: 340px;
+    height: 51px;
+    padding: 20px 54px;
+    margin-bottom: 65px;
   }
 }
 @media (min-width: 1256px) {
@@ -932,6 +943,9 @@
   line-height: 1.4;
 }
 
+.questions {
+  position: relative;
+}
 @media (min-width: 375px) {
   .questions {
     padding: 173px 18px 49px;
@@ -941,9 +955,6 @@
   }
   .questions__title_theme_white {
     color: white;
-  }
-  .questions__title_margin-bottom_24px {
-    margin-bottom: 24px;
   }
   .questions__image {
     max-width: 100%;
@@ -959,13 +970,19 @@
 }
 @media (min-width: 1256px) {
   .questions {
+    padding: 327px 0 0;
+    background: url("../images/photo/map/bg.png") left top/100% no-repeat;
+    object-fit: cover;
+  }
+  .questions__section {
     width: 883px;
     margin: 0 auto;
     padding: 35px 182px;
     background-color: #181818;
-    position: relative;
-    top: -223px;
+    position: absolute;
+    top: -240px;
     left: 0;
+    right: 0;
   }
   .questions__form {
     flex-direction: row;
@@ -973,9 +990,6 @@
     justify-content: space-between;
     column-gap: 60px;
   }
-}
-.questions__wrapper {
-  background: url("../images/photo/map/bg-home.png") no-repeat;
 }
 
 .social-links {
@@ -1211,6 +1225,113 @@
   width: 376px;
   padding: 22px 32px 70px 20px;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+}
+
+.map__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .map__title {
+    order: 0;
+  }
+}
+@media (max-width: 1256px) {
+  .map__title {
+    order: 1;
+  }
+}
+.map__title_margin-bottom_24px {
+  margin-bottom: 24px;
+}
+@media (min-width: 375px) {
+  .map__picture {
+    order: 0;
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 1256px) {
+  .map__picture {
+    order: 1;
+  }
+}
+@media (min-width: 375px) {
+  .map__social-links {
+    order: 1;
+  }
+}
+@media (min-width: 1256px) {
+  .map__social-links {
+    margin-bottom: 44px;
+    order: 0;
+  }
+}
+
+.footer {
+  font-family: "Nunito";
+  font-size: 11px;
+  line-height: 15px;
+}
+@media (min-width: 375px) {
+  .footer {
+    display: none;
+  }
+}
+@media (min-width: 1256px) {
+  .footer {
+    display: block;
+    padding: 24px 90px 22px 92px;
+  }
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .footer__wrapper {
+    gap: 56px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1256px) {
+  .footer__wrapper {
+    gap: 0;
+  }
+}
+.footer__logo {
+  color: #E3B873;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer__contacts {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+.footer__tel {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .footer__tel {
+    color: #E3B873;
+    text-decoration: underline;
+  }
+}
+.footer__button {
+  padding: 13px 33px;
+  cursor: pointer;
+}
+@media (min-width: 375px) {
+  .footer__button {
+    display: none;
+  }
+}
+@media (min-width: 1256px) {
+  .footer__button {
+    display: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,45 @@
 @use '../../global/variables' as *;
 
 .map {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        @media (min-width: $screen-es) {
+            order: 0;
+        }
+        
+        @media (max-width: $screen-xl) {
+            order: 1;
+        }
+
+        &_margin-bottom_24px {
+            margin-bottom: 24px;
+        } 
+    }
+
+    &__picture {
+        @media (min-width: $screen-es) {
+            order: 0;
+            margin-bottom: 42px;
+        }
+
+        @media (min-width: $screen-xl) {
+            order: 1;
+        }
+    }
+    
+    &__social-links {
+        @media (min-width: $screen-es) {
+            order: 1;
+        }
+
+        @media (min-width: $screen-xl) {
+            margin-bottom: 44px;
+            order: 0;
+        }
+    }
 }

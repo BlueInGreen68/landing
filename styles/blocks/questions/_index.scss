@@ -1,6 +1,8 @@
 @use '../../global/variables' as *;
 
 .questions {
+    position: relative;
+
     @media (min-width: $screen-es) {
         padding: 173px 18px 49px;
 
@@ -9,11 +11,7 @@
     
             &_theme_white {
                 color: white;
-            }
-    
-            &_margin-bottom_24px {
-                margin-bottom: 24px;
-            }    
+            }   
         }
     
         &__image {
@@ -32,13 +30,20 @@
     }
 
     @media (min-width: $screen-xl) {
-        width: 883px;
-        margin: 0 auto;
-        padding: 35px 182px;
-        background-color: #181818;
-        position: relative;
-        top: -223px;
-        left: 0;
+        padding: 327px 0 0;
+        background: url('../images/photo/map/bg.png') left top / 100% no-repeat;
+        object-fit: cover;
+
+        &__section {
+            width: 883px;
+            margin: 0 auto;
+            padding: 35px 182px;
+            background-color: #181818;
+            position: absolute;
+            top: -240px;
+            left: 0;
+            right: 0;
+        }
 
         &__form {
             flex-direction: row;
@@ -46,9 +51,5 @@
             justify-content: space-between;
             column-gap: 60px;
         }
-    }
-    
-    &__wrapper {
-        background: url('../images/photo/map/bg-home.png') no-repeat;
     }
 }
